@@ -9,28 +9,17 @@ Utility module for scheduled task logic, logging, and Windows EventLog managemen
 \## 📦 Functions Overview
 
 
-
-| Function | Description |
-
-|----------|-------------|
-
-| `Test-TaskDue` | Checks if a task is due based on registry config |
-
-| `Update-TaskStatus` | Updates registry with success/error state |
-
-| `Write-TaskLog` | Appends structured log entries to a task-specific log file |
-
-| `Get-TaskConfig` | Reads task registry configuration as an object |
-
-| `Start-TaskTranscriptIfVerbose` | Starts transcript logging if LogLevel is 'Verbose' |
-
-| `Stop-TranscriptIfRunning` | Stops an active transcript if running |
-
-| `New-MompfdieEventLog` | Creates a new Windows EventLog + source (admin required) |
-
-| `New-MompfdieEventLogSource` | Adds a new source to an existing EventLog (admin required) |
-
-| `Write-MompfdieEventLog` | Writes entries into the Windows EventLog |
+| Function                        | Description                                                  |
+|--------------------------------|--------------------------------------------------------------|
+| Test-TaskDue                   | Checks if a task is due based on registry config             |
+| Update-TaskStatus              | Updates registry with success/error state                    |
+| Write-TaskLog                  | Appends structured log entries to a task-specific log file   |
+| Get-TaskConfig                 | Reads task registry configuration as an object               |
+| Start-TaskTranscriptIfVerbose | Starts transcript logging if LogLevel is 'Verbose'           |
+| Stop-TranscriptIfRunning       | Stops an active transcript if running                        |
+| New-MompfdieEventLog           | Creates a new Windows EventLog + source (admin required)     |
+| New-MompfdieEventLogSource     | Adds a new source to an existing EventLog (admin required)   |
+| Write-MompfdieEventLog         | Writes entries into the Windows EventLog                    |
 
 
 
