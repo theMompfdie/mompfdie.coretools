@@ -40,37 +40,21 @@ Utility module for scheduled task logic, logging, and Windows EventLog managemen
 \## 🧪 Example
 
 ```powershell
-
 Import-Module mompfdie.coretools
 
-
-
 if (Test-TaskDue -TaskName 'CleanupTask') {
+    Start-TaskTranscriptIfVerbose -TaskName 'CleanupTask'
 
-&nbsp;   Start-TaskTranscriptIfVerbose -TaskName 'CleanupTask'
+    try {
+        # ... perform the task ...
+        Update-TaskStatus -TaskName 'CleanupTask'
+    }
+    catch {
+        Update-TaskStatus -TaskName 'CleanupTask' -ErrorMessage $_.Exception.Message
+    }
 
-
-
-&nbsp;   try {
-
-&nbsp;       # ... perform the task ...
-
-&nbsp;       Update-TaskStatus -TaskName 'CleanupTask'
-
-&nbsp;   }
-
-&nbsp;   catch {
-
-&nbsp;       Update-TaskStatus -TaskName 'CleanupTask' -ErrorMessage $\_.Exception.Message
-
-&nbsp;   }
-
-
-
-&nbsp;   Stop-TranscriptIfRunning
-
+    Stop-TranscriptIfRunning
 }
-
 ```
 
 
