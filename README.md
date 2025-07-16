@@ -1,4 +1,4 @@
-\# mompfdie.coretools
+# mompfdie.coretools
 
 
 
@@ -6,7 +6,7 @@ Utility module for scheduled task logic, logging, and Windows EventLog managemen
 
 
 
-\## 📦 Functions Overview
+## 📦 Functions Overview
 
 
 | Function                        | Description                                                  |
@@ -23,7 +23,7 @@ Utility module for scheduled task logic, logging, and Windows EventLog managemen
 
 
 
-\## 🧱 Structure \& Requirements
+## 🧱 Structure \& Requirements
 
 
 
@@ -37,7 +37,7 @@ Utility module for scheduled task logic, logging, and Windows EventLog managemen
 
 
 
-\## 🧪 Example
+## 🧪 Example
 
 ```powershell
 Import-Module mompfdie.coretools
@@ -59,7 +59,7 @@ if (Test-TaskDue -TaskName 'CleanupTask') {
 
 
 
-\## 🛠 Initial Registry Setup
+## 🛠 Initial Registry Setup
 
 ```powershell
 
@@ -75,7 +75,7 @@ Set-ItemProperty -Path 'HKCU:\\Software\\MompfdieTasks\\Tasks\\CleanupTask' -Nam
 
 
 
-\## 📦 Release Channel
+## 📦 Release Channel
 
 This is a \*\*Release Candidate\*\* (`v1.0.0-rc1`).
 
