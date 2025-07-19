@@ -77,7 +77,7 @@ Set-ItemProperty -Path 'HKCU:\\Software\\MompfdieTasks\\Tasks\\CleanupTask' -Nam
 
 ## 📦 Release Channel
 
-This is a \*\*Release Candidate\*\* (`v1.0.0-rc1`).
+This is a **Release** (`v1.0.0`).
 
 A stable release will follow once the module is fully tested.
 
